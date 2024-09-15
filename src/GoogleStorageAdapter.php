@@ -151,7 +151,7 @@ class GoogleStorageAdapter extends AbstractAdapter
         if ($metadata = $config->get('metadata')) {
             $options['metadata'] = $metadata;
         }
-
+        unset($options['predefinedAcl']);
         return $options;
     }
 
